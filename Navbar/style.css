@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./Image/leon-macapagal-e_xjeaSMgpI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+}
+
+.wrapper {
+  width: 860px;
+  margin: 0 auto;
+}
+
+.wrapper ul {
+  list-style: none;
+  margin-top: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper ul > .active {
+  background: #eb5e0b;
+  color: #fff;
+}
+.wrapper ul li {
+  background-color: #262626;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  font-size: 14px;
+  position: relative;
+  transition: ease-in 0.4s;
+}
+
+.wrapper ul li:hover {
+  background: #eb5e0b;
+}
+
+.wrapper ul ul {
+  display: none;
+}
+
+.wrapper ul li:hover > ul {
+  display: block;
+}
+
+.wrapper ul ul ul {
+  margin-left: 170px;
+  top: 0;
+  left: 2px;
+  position: absolute;
+}
